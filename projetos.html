@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projetos — Anderson de Paula</title>
+<meta name="description" content="Voltz Pay e Zait Pay — plataforma de banking digital baseada em Pix, arquitetada e operada por Anderson de Paula.">
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230a0c0f'/%3E%3Ccircle cx='32' cy='32' r='24' fill='none' stroke='%23d4af37' stroke-width='2'/%3E%3Ctext x='32' y='40' font-family='monospace' font-size='20' fill='%23d4af37' text-anchor='middle'%3EAP%3C/text%3E%3C/svg%3E">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Projetos — Anderson de Paula">
+<meta property="og:description" content="Voltz Pay e Zait Pay — plataforma de banking digital baseada em Pix, arquitetada e operada por Anderson de Paula.">
+<meta property="og:image" content="og-image.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Projetos — Anderson de Paula">
+<meta name="twitter:description" content="Voltz Pay e Zait Pay — plataforma de banking digital baseada em Pix, arquitetada e operada por Anderson de Paula.">
+<meta name="twitter:image" content="og-image.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">AP</span>
+      <span>Anderson de Paula<small>FOUNDER &amp; CTO — BANKING / PIX</small></span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="projetos.html" aria-current="page">Projetos</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="contato.html" class="nav-cta">Contato</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow">Projetos</span>
+      <h1 class="section-title">Um sistema financeiro real, em produção</h1>
+      <p class="lede">Não é uma prova de conceito. É um banco digital Pix rodando com clientes reais, apps nas duas lojas e conformidade ativa com o Banco Central.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+
+      <div class="project reveal">
+        <div class="project-top">
+          <h3>Voltz Pay
+            <small>+ marca irmã Zait Pay — plataforma multi-tenant</small>
+          </h3>
+          <div class="hero-status" style="margin:0;"><span class="dot"></span> Em produção</div>
+        </div>
+        <p class="project-desc">
+          Plataforma de banking digital construída em torno do Pix, com apps web e mobile (Android/iOS). Arquitetei o sistema do núcleo bancário multi-tenant até a publicação dos aplicativos nativos nas lojas, conduzindo levantamento de requisitos, arquitetura, implementação, testes em produção e operação contínua.
+        </p>
+
+        <ul class="project-feats">
+          <li>Backend multi-tenant com isolamento de dados por núcleo de conta</li>
+          <li>RBAC completo: Master / Admin / Gerente / Cliente</li>
+          <li>Pix: envio, recebimento, QR Code dinâmico e estático</li>
+          <li>Split de pagamentos configurável</li>
+          <li>Limites diurno/noturno com carência de 24h (norma Bacen)</li>
+          <li>Verificação de destinatário em tempo real via DICT</li>
+          <li>Integração BaaS (Woovi/OpenPix) com reconciliação via webhooks</li>
+          <li>Notificações próprias: webhook de saída + e-mail transacional</li>
+          <li>KYC, biometria (Face ID/digital) e senha de transação</li>
+          <li>Expiração automática de sessão por inatividade</li>
+          <li>Apps nativos Android publicados via Capacitor + Play Console</li>
+          <li>CI/CD com GitHub Actions e sync seguro de schema (Prisma)</li>
+        </ul>
+
+        <div class="project-tags">
+          <span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">Prisma ORM</span>
+          <span class="tag">MySQL</span><span class="tag">Capacitor</span><span class="tag">GitHub Actions</span>
+          <span class="tag">Pix / Bacen / DICT</span><span class="tag">Banking-as-a-Service</span>
+          <span class="tag">JWT</span><span class="tag">VPS Linux + PM2</span>
+        </div>
+
+        <div class="project-links">
+          <a href="https://painel.voltzpay.app/" target="_blank" rel="noopener" class="btn btn-primary">
+            Ver produto ao vivo
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+          </a>
+          <a href="contato.html" class="btn btn-ghost">Conversar sobre arquitetura</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section-alt">
+    <div class="wrap" style="text-align:center;">
+      <span class="eyebrow" style="justify-content:center;">Contexto</span>
+      <h2 class="section-title reveal">Aprendizado construído na prática</h2>
+      <p class="section-sub reveal" style="margin-left:auto;margin-right:auto;">
+        Operar um sistema financeiro em produção exige lidar com os desafios reais de compliance, segurança de transação e infraestrutura de deploy contínuo — não apenas escrever código. Foi assim que a Voltz Pay e a Zait Pay foram construídas: sustentando um sistema real, com dinheiro real, em produção.
+      </p>
+      <a href="contato.html" class="btn btn-primary reveal">Vamos conversar</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-brand"><strong>Anderson de Paula</strong> — Founder &amp; CTO, Banking Digital (Pix) · São José do Rio Preto, SP · © <span id="year"></span></div>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/anderson-de-paula-a4ba82420/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:andersondepaula2304@gmail.com">E-mail</a>
+      <a href="https://painel.voltzpay.app/" target="_blank" rel="noopener">Voltz Pay ↗</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

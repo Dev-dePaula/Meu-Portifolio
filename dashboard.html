@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard de Projetos — Anderson de Paula</title>
+<meta name="description" content="Dashboard conectado ao GitHub de Anderson de Paula, listando e detalhando os projetos e repositórios em desenvolvimento.">
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230a0c0f'/%3E%3Ccircle cx='32' cy='32' r='24' fill='none' stroke='%23d4af37' stroke-width='2'/%3E%3Ctext x='32' y='40' font-family='monospace' font-size='20' fill='%23d4af37' text-anchor='middle'%3EAP%3C/text%3E%3C/svg%3E">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Dashboard de Projetos — Anderson de Paula">
+<meta property="og:description" content="Dashboard conectado ao GitHub, listando e detalhando os projetos de Anderson de Paula.">
+<meta property="og:image" content="og-image.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Dashboard de Projetos — Anderson de Paula">
+<meta name="twitter:description" content="Dashboard conectado ao GitHub, listando e detalhando os projetos de Anderson de Paula.">
+<meta name="twitter:image" content="og-image.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">AP</span>
+      <span>Anderson de Paula<small>FOUNDER &amp; CTO — BANKING / PIX</small></span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="projetos.html">Projetos</a></li>
+      <li><a href="dashboard.html" aria-current="page">Dashboard</a></li>
+      <li><a href="contato.html" class="nav-cta">Contato</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-hero" style="padding-bottom:0;border-bottom:none;">
+    <div class="wrap">
+      <span class="eyebrow">Dashboard</span>
+      <h1 class="section-title">Projetos direto do GitHub</h1>
+      <p class="lede">
+        Conectado em tempo real à API pública do GitHub (<span class="mono">@Dev-dePaula</span>). Escolha um repositório na lista ao lado para ver detalhes, README e — quando disponível — uma prévia ao vivo do projeto.
+      </p>
+    </div>
+  </section>
+
+  <section style="padding-top:46px;">
+    <div class="wrap dash-layout">
+
+      <aside class="dash-sidebar">
+        <div class="dash-sidebar-head">
+          <span>REPOSITÓRIOS</span>
+          <span id="repoCount" class="dash-count">—</span>
+        </div>
+        <div class="dash-repo-list" id="repoList">
+          <div class="dash-empty">Carregando repositórios do GitHub…</div>
+        </div>
+      </aside>
+
+      <section class="dash-detail" id="repoDetail">
+        <div class="dash-empty dash-empty-lg">Selecione um repositório na lista para ver os detalhes.</div>
+      </section>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-brand"><strong>Anderson de Paula</strong> — Founder &amp; CTO, Banking Digital (Pix) · São José do Rio Preto, SP · © <span id="year"></span></div>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/anderson-de-paula-a4ba82420/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:andersondepaula2304@gmail.com">E-mail</a>
+      <a href="https://painel.voltzpay.app/" target="_blank" rel="noopener">Voltz Pay ↗</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="dashboard.js"></script>
+</body>
+</html>

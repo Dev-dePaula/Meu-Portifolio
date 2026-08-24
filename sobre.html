@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sobre — Anderson de Paula</title>
+<meta name="description" content="Trajetória, competências técnicas e experiência de Anderson de Paula, Founder & CTO da Voltz Pay / Zait Pay.">
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230a0c0f'/%3E%3Ccircle cx='32' cy='32' r='24' fill='none' stroke='%23d4af37' stroke-width='2'/%3E%3Ctext x='32' y='40' font-family='monospace' font-size='20' fill='%23d4af37' text-anchor='middle'%3EAP%3C/text%3E%3C/svg%3E">
+
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Sobre — Anderson de Paula">
+<meta property="og:description" content="Trajetória, competências técnicas e experiência de Anderson de Paula, Founder & CTO da Voltz Pay / Zait Pay.">
+<meta property="og:image" content="og-image.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sobre — Anderson de Paula">
+<meta name="twitter:description" content="Trajetória, competências técnicas e experiência de Anderson de Paula, Founder & CTO da Voltz Pay / Zait Pay.">
+<meta name="twitter:image" content="og-image.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">AP</span>
+      <span>Anderson de Paula<small>FOUNDER &amp; CTO — BANKING / PIX</small></span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="sobre.html" aria-current="page">Sobre</a></li>
+      <li><a href="projetos.html">Projetos</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="contato.html" class="nav-cta">Contato</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow">Sobre mim</span>
+      <h1 class="section-title">Visão de produto, arquitetura técnica e execução hands-on</h1>
+      <p class="lede">
+        Founder &amp; CTO com experiência ponta a ponta na concepção, arquitetura e operação de uma plataforma bancária digital completa baseada em Pix — a Voltz Pay e sua marca irmã, Zait Pay. Atuo diretamente em decisões de arquitetura de sistemas financeiros, integração com Banking-as-a-Service, conformidade com normas do Banco Central e publicação de aplicativos nativos em produção.
+      </p>
+    </div>
+  </section>
+
+  <!-- EXPERIÊNCIA -->
+  <section>
+    <div class="wrap">
+      <span class="eyebrow">Experiência profissional</span>
+      <h2 class="section-title reveal">Construindo um banco digital do zero</h2>
+      <p class="section-sub reveal">Um único projeto, mas ponta a ponta: da arquitetura ao app publicado na loja, com clientes reais e dinheiro real em produção.</p>
+
+      <div class="exp-card reveal">
+        <div class="exp-head">
+          <div>
+            <div class="exp-role">Founder &amp; CTO <span>— Voltz Pay / Zait Pay</span></div>
+          </div>
+          <div class="exp-period">2025 — Atual</div>
+        </div>
+        <div class="exp-org">Plataforma de banking digital (Pix) com apps web e mobile (Android/iOS), operando em produção com clientes reais.</div>
+        <ul class="exp-list">
+          <li>Arquitetei um backend multi-tenant em Node.js/Express + Prisma ORM sobre MySQL, servindo duas marcas (Voltz Pay e Zait Pay) com isolamento de dados por núcleo de conta e controle de acesso baseado em papéis (Master/Admin/Gerente/Cliente).</li>
+          <li>Projetei e implementei o fluxo completo de Pix: envio e recebimento, QR Code dinâmico e estático, split de pagamentos configurável, e limites de transação diurno/noturno em conformidade com normas de segurança do Banco Central — incluindo carência de 24h para aumento de limite.</li>
+          <li>Implementei verificação de destinatário Pix em tempo real via consulta ao DICT do Banco Central (Bacen), reduzindo o risco de transferências para chaves incorretas.</li>
+          <li>Integrei a plataforma com provedor de Banking-as-a-Service (Woovi/OpenPix) para processamento Pix, incluindo reconciliação de transações via webhooks e sistema próprio de notificações (webhook de saída + e-mail transacional).</li>
+          <li>Implementei camadas de segurança: KYC/verificação de identidade, autenticação biométrica (Face ID/digital) em app nativo, senha de transação (PIN) e expiração automática de sessão por inatividade.</li>
+          <li>Publiquei aplicativos nativos Android (Google Play Console) usando Capacitor, incluindo assinatura de release, gerenciamento de versão e conformidade com políticas de app financeiro.</li>
+          <li>Implantei pipeline de CI/CD (GitHub Actions) para deploy automatizado do backend, incluindo sincronização segura de schema de banco de dados (Prisma) com backup automático e proteção contra perda de dados.</li>
+          <li>Conduzi todo o ciclo de vida técnico do produto: levantamento de requisitos, arquitetura, implementação — com uso extensivo de ferramentas de desenvolvimento assistido por IA —, testes em produção e operação contínua.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section-alt">
+    <div class="wrap">
+      <span class="eyebrow">Competências técnicas</span>
+      <h2 class="section-title reveal">Stack completa, ponta a ponta</h2>
+      <p class="section-sub reveal">Do banco de dados ao app publicado na loja — passando por compliance regulatório e infraestrutura de deploy.</p>
+
+      <div class="skill-group reveal">
+        <div class="skill-group-head"><h3>Backend</h3><span>08</span></div>
+        <div class="chip-row">
+          <span class="chip">Node.js</span><span class="chip">Express</span><span class="chip">Python</span>
+          <span class="chip">Prisma ORM</span><span class="chip">MySQL</span><span class="chip">APIs REST</span>
+          <span class="chip">Arquitetura multi-tenant</span><span class="chip">Autenticação JWT</span>
+        </div>
+      </div>
+
+      <div class="skill-group reveal">
+        <div class="skill-group-head"><h3>Inteligência artificial</h3><span>08</span></div>
+        <div class="chip-row">
+          <span class="chip">LLMs (OpenAI, Claude, Gemini)</span><span class="chip">LangChain</span>
+          <span class="chip">LangGraph</span><span class="chip">Orquestração de agentes</span>
+          <span class="chip">Fine-tuning de modelos</span><span class="chip">scikit-learn</span>
+          <span class="chip">PyTorch</span><span class="chip">TensorFlow</span>
+        </div>
+      </div>
+
+      <div class="skill-group reveal">
+        <div class="skill-group-head"><h3>Automação</h3><span>07</span></div>
+        <div class="chip-row">
+          <span class="chip">Python (Requests, BeautifulSoup)</span><span class="chip">Selenium</span>
+          <span class="chip">n8n</span><span class="chip">Make</span><span class="chip">Zapier</span>
+          <span class="chip">Bots (Telegram / WhatsApp / Discord)</span><span class="chip">RPA de processos internos</span>
+        </div>
+      </div>
+
+      <div class="skill-group reveal">
+        <div class="skill-group-head"><h3>Frontend</h3><span>04</span></div>
+        <div class="chip-row">
+          <span class="chip">JavaScript</span><span class="chip">HTML5</span><span class="chip">CSS3</span>
+          <span class="chip">Desenvolvimento de SPA</span>
+        </div>
+      </div>
+
+      <div class="skill-group reveal">
+        <div class="skill-group-head"><h3>Mobile</h3><span>03</span></div>
+        <div class="chip-row">
+          <span class="chip">Capacitor (Android/iOS)</span><span class="chip">Google Play Console</span>
+          <span class="chip">Assinatura &amp; publicação de apps</span>
+        </div>
+      </div>
+
+      <div class="skill-group reveal">
+        <div class="skill-group-head"><h3>Infraestrutura</h3><span>05</span></div>
+        <div class="chip-row">
+          <span class="chip">Git / GitHub</span><span class="chip">CI/CD (GitHub Actions)</span>
+          <span class="chip">Vercel</span><span class="chip">Deploy em VPS Linux</span><span class="chip">PM2</span>
+        </div>
+      </div>
+
+      <div class="skill-group reveal">
+        <div class="skill-group-head"><h3>Domínio financeiro</h3><span>05</span></div>
+        <div class="chip-row">
+          <span class="chip">Pix (Bacen / DICT)</span><span class="chip">Open Finance</span>
+          <span class="chip">Banking-as-a-Service</span><span class="chip">KYC</span><span class="chip">Compliance regulatório</span>
+        </div>
+      </div>
+
+      <div class="skill-group reveal">
+        <div class="skill-group-head"><h3>Práticas modernas</h3><span>01</span></div>
+        <div class="chip-row">
+          <span class="chip">AI pair-programming com supervisão arquitetural</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMAÇÃO / IDIOMAS -->
+  <section>
+    <div class="wrap">
+      <span class="eyebrow">Formação &amp; idiomas</span>
+      <h2 class="section-title reveal">Formação prática, construída em produção</h2>
+      <div class="grid-3" style="grid-template-columns:1fr 1fr;">
+        <div class="card reveal">
+          <div class="ic">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10L12 5 2 10l10 5 10-5zM6 12v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg>
+          </div>
+          <h3>Formação acadêmica</h3>
+          <p>Autodidata — formação construída na prática, arquitetando e operando um sistema financeiro real em produção, sem curso superior formal.</p>
+        </div>
+        <div class="card reveal">
+          <div class="ic">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 010 20 15 15 0 010-20z"/></svg>
+          </div>
+          <h3>Idiomas</h3>
+          <p>Português — nativo. Inglês — básico (leitura técnica de documentação).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-brand"><strong>Anderson de Paula</strong> — Founder &amp; CTO, Banking Digital (Pix) · São José do Rio Preto, SP · © <span id="year"></span></div>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/anderson-de-paula-a4ba82420/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:andersondepaula2304@gmail.com">E-mail</a>
+      <a href="https://painel.voltzpay.app/" target="_blank" rel="noopener">Voltz Pay ↗</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
